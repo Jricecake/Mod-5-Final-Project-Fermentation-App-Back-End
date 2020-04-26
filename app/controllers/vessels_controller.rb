@@ -1,2 +1,0 @@
-class VesselsController < ApplicationController
-end
