@@ -5,6 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Ingredient.destroy_all
+Vessel.delete_all
+Brine.delete_all
+Note.delete_all
+Project.delete_all
+User.delete_all
+
 User.create(username: 'JonnyR', first_name: 'Jonny', last_name: 'Riecke', email: 'jonathanriecke@gmail.com')
 Project.create(name: 'Kimchi', end_date: '04/30/20', user_id: 1)
 Ingredient.create(name: 'Cabbage', quantity: 3, units: 'heads', prep: 'Quartered', project_id: 1)
@@ -13,5 +21,7 @@ Ingredient.create(name: 'Asian Pear', quantity: 1, units: 'nil', prep: 'Matchsti
 Ingredient.create(name: 'Carrots ', quantity: 3, units: 'Carrots', prep: 'Matchstick cut', project_id: 1)
 
 Brine.create(amount: 12, units: 'cups', salt: 10, sugar: 0, project_id: 1)
+
+Vessel.create(vessel: 'Crock', volume: 3, units: 'Liters', airlock: false, weight: true, material: 'Clay', notes: 'Grandma\'s crock', project_id: 1)
 
 Note.create(text: "I made this Kimchi to hurt my mouth", project_id: 1)

@@ -1,7 +1,7 @@
 class CreateVessels < ActiveRecord::Migration[6.0]
   def change
     create_table :vessels do |t|
-      t.string :type
+      t.string :vessel
       t.integer :volume
       t.string :units
       t.boolean :airlock

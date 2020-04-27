@@ -65,7 +65,7 @@ ActiveRecord::Schema.define(version: 2020_04_23_004715) do
   end
 
   create_table "vessels", force: :cascade do |t|
-    t.string "type"
+    t.string "vessel"
     t.integer "volume"
     t.string "units"
     t.boolean "airlock"

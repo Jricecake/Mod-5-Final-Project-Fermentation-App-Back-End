@@ -253,3 +253,1810 @@ puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
 puma (4.3.3) lib/puma/server.rb:472:in `process_client'
 puma (4.3.3) lib/puma/server.rb:328:in `block in run'
 puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/projects/" for ::1 at 2020-04-25 23:19:46 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::ProjectsController#index as HTML
+[active_model_serializers]   [1m[36mProject Load (3.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (56.78ms)
+Completed 200 OK in 71ms (Views: 16.5ms | ActiveRecord: 43.4ms | Allocations: 8038)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-25 23:23:57 -0700
+  
+SyntaxError (/Users/Jonny/Development/mod5/Fermentation-App/Mod-5-Final-Project-Fermentation-App/app/controllers/api/v1/projects_controller.rb:9: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/api/v1/projects_controller.rb:9: syntax error, unexpected end-of-input, expecting end
+app/controllers/api/v1/projects_controller.rb:9: syntax error, unexpected end-of-input, expecting end
+Started GET "/api/v1/projects/" for ::1 at 2020-04-25 23:24:15 -0700
+Processing by Api::V1::ProjectsController#index as HTML
+  [1m[36mProject Load (1.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (0.7ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (52.43ms)
+Completed 200 OK in 167ms (Views: 98.4ms | ActiveRecord: 45.4ms | Allocations: 18362)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-25 23:24:38 -0700
+Processing by Api::V1::ProjectsController#index as HTML
+[active_model_serializers]   [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (57.65ms)
+Completed 200 OK in 66ms (Views: 16.9ms | ActiveRecord: 41.5ms | Allocations: 6905)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-25 23:25:01 -0700
+Processing by Api::V1::ProjectsController#index as HTML
+[active_model_serializers]   [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (21.95ms)
+Completed 200 OK in 40ms (Views: 17.0ms | ActiveRecord: 6.7ms | Allocations: 6827)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-25 23:25:12 -0700
+Processing by Api::V1::ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (65.91ms)
+Completed 200 OK in 111ms (Views: 81.0ms | ActiveRecord: 22.8ms | Allocations: 13718)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-25 23:26:11 -0700
+Processing by Api::V1::ProjectsController#index as HTML
+  [1m[36mProject Load (12.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (14.19ms)
+Completed 500 Internal Server Error in 155ms (ActiveRecord: 111.2ms | Allocations: 9293)
+
+
+  
+NoMethodError (undefined method `brines' for #<Project:0x00007fae5e54d148>):
+  
+app/controllers/api/v1/projects_controller.rb:5:in `index'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Destroy (5.6ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (19.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mProject Destroy (3.1ms)[0m  [1m[31mDELETE FROM "projects"[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mIngredient Destroy (2.0ms)[0m  [1m[31mDELETE FROM "ingredients"[0m
+  [1m[36mVessel Destroy (20.1ms)[0m  [1m[31mDELETE FROM "vessels"[0m
+  [1m[36mBrine Destroy (12.4ms)[0m  [1m[31mDELETE FROM "brines"[0m
+  [1m[36mNote Destroy (6.3ms)[0m  [1m[31mDELETE FROM "notes"[0m
+  [1m[36mProject Destroy (6.5ms)[0m  [1m[31mDELETE FROM "projects"[0m
+  [1m[36mUser Destroy (6.9ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "JonnyR"], ["first_name", "Jonny"], ["last_name", "Riecke"], ["email", "jonathanriecke@gmail.com"], ["created_at", "2020-04-26 06:34:18.462650"], ["updated_at", "2020-04-26 06:34:18.462650"]]
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/api/v1/projects/" for ::1 at 2020-04-25 23:34:45 -0700
+Processing by Api::V1::ProjectsController#index as HTML
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.07ms)
+Completed 200 OK in 37ms (Views: 10.5ms | ActiveRecord: 0.6ms | Allocations: 4080)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mProject Load (1.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mIngredient Load (0.7ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  [1m[36mVessel Destroy (0.4ms)[0m  [1m[31mDELETE FROM "vessels"[0m
+  [1m[36mBrine Destroy (0.4ms)[0m  [1m[31mDELETE FROM "brines"[0m
+  [1m[36mNote Destroy (0.5ms)[0m  [1m[31mDELETE FROM "notes"[0m
+  [1m[36mProject Destroy (0.4ms)[0m  [1m[31mDELETE FROM "projects"[0m
+  [1m[36mUser Destroy (7.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "JonnyR"], ["first_name", "Jonny"], ["last_name", "Riecke"], ["email", "jonathanriecke@gmail.com"], ["created_at", "2020-04-26 06:35:28.160133"], ["updated_at", "2020-04-26 06:35:28.160133"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE DATABASE "back_end_fermentation_app_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE "back_end_fermentation_app_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (24.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (66.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "back_end_fermentation_app_development"[0m
+  [1m[35m (64.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "back_end_fermentation_app_test"[0m
+  [1m[35m (299.2ms)[0m  [1m[35mCREATE DATABASE "back_end_fermentation_app_development" ENCODING = 'unicode'[0m
+  [1m[35m (213.6ms)[0m  [1m[35mCREATE DATABASE "back_end_fermentation_app_test" ENCODING = 'unicode'[0m
+  [1m[35m (41.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (19.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8380214797721719575)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20200423003337)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (32.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "first_name" character varying, "last_name" character varying, "email" character varying, "password_digest" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200423003337"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateProjects (20200423003839)
+  [1m[35m (6.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (22.6ms)[0m  [1m[35mCREATE TABLE "projects" ("id" bigserial primary key, "name" character varying, "end_date" character varying, "user_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_b872a6760a"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE  INDEX  "index_projects_on_user_id" ON "projects"  ("user_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200423003839"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateIngredients (20200423004102)
+  [1m[35m (6.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (13.4ms)[0m  [1m[35mCREATE TABLE "ingredients" ("id" bigserial primary key, "name" character varying, "quantity" integer, "units" character varying, "prep" character varying, "project_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_0014787ef1"
+FOREIGN KEY ("project_id")
+  REFERENCES "projects" ("id")
+)[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE  INDEX  "index_ingredients_on_project_id" ON "ingredients"  ("project_id")[0m
+  [1m[36mprimary::SchemaMigration Create (4.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200423004102"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateBrines (20200423004213)
+  [1m[35m (6.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (18.9ms)[0m  [1m[35mCREATE TABLE "brines" ("id" bigserial primary key, "amount" integer, "units" character varying, "salt" integer, "sugar" integer, "project_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_1f525b198e"
+FOREIGN KEY ("project_id")
+  REFERENCES "projects" ("id")
+)[0m
+  [1m[35m (9.0ms)[0m  [1m[35mCREATE  INDEX  "index_brines_on_project_id" ON "brines"  ("project_id")[0m
+  [1m[36mprimary::SchemaMigration Create (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200423004213"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateVessels (20200423004638)
+  [1m[35m (11.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.3ms)[0m  [1m[35mCREATE TABLE "vessels" ("id" bigserial primary key, "vessel" character varying, "volume" integer, "units" character varying, "airlock" boolean, "weight" boolean, "material" character varying, "notes" character varying, "project_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_54e8586376"
+FOREIGN KEY ("project_id")
+  REFERENCES "projects" ("id")
+)[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE  INDEX  "index_vessels_on_project_id" ON "vessels"  ("project_id")[0m
+  [1m[36mprimary::SchemaMigration Create (2.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200423004638"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateNotes (20200423004715)
+  [1m[35m (25.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "notes" ("id" bigserial primary key, "text" character varying, "project_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_99e097b079"
+FOREIGN KEY ("project_id")
+  REFERENCES "projects" ("id")
+)[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE  INDEX  "index_notes_on_project_id" ON "notes"  ("project_id")[0m
+  [1m[36mprimary::SchemaMigration Create (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200423004715"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-04-26 06:40:49.604339"], ["updated_at", "2020-04-26 06:40:49.604339"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8380214797721719575)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mIngredient Load (0.7ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  [1m[36mVessel Destroy (0.5ms)[0m  [1m[31mDELETE FROM "vessels"[0m
+  [1m[36mBrine Destroy (0.5ms)[0m  [1m[31mDELETE FROM "brines"[0m
+  [1m[36mNote Destroy (0.4ms)[0m  [1m[31mDELETE FROM "notes"[0m
+  [1m[36mProject Destroy (0.9ms)[0m  [1m[31mDELETE FROM "projects"[0m
+  [1m[36mUser Destroy (3.2ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (6.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "first_name", "last_name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["username", "JonnyR"], ["first_name", "Jonny"], ["last_name", "Riecke"], ["email", "jonathanriecke@gmail.com"], ["created_at", "2020-04-26 06:40:54.458443"], ["updated_at", "2020-04-26 06:40:54.458443"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProject Create (0.8ms)[0m  [1m[32mINSERT INTO "projects" ("name", "end_date", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Kimchi"], ["end_date", "04/30/20"], ["user_id", 1], ["created_at", "2020-04-26 06:40:54.489506"], ["updated_at", "2020-04-26 06:40:54.489506"]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIngredient Create (0.7ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "quantity", "units", "prep", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Cabbage"], ["quantity", 3], ["units", "heads"], ["prep", "Quartered"], ["project_id", 1], ["created_at", "2020-04-26 06:40:54.511579"], ["updated_at", "2020-04-26 06:40:54.511579"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "quantity", "units", "prep", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Korean Chili Flakes"], ["quantity", 3], ["units", "cups"], ["prep", "Scooped"], ["project_id", 1], ["created_at", "2020-04-26 06:40:54.518347"], ["updated_at", "2020-04-26 06:40:54.518347"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "quantity", "units", "prep", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Asian Pear"], ["quantity", 1], ["units", "nil"], ["prep", "Matchstick cut"], ["project_id", 1], ["created_at", "2020-04-26 06:40:54.523691"], ["updated_at", "2020-04-26 06:40:54.523691"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIngredient Create (0.5ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "quantity", "units", "prep", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Carrots "], ["quantity", 3], ["units", "Carrots"], ["prep", "Matchstick cut"], ["project_id", 1], ["created_at", "2020-04-26 06:40:54.530690"], ["updated_at", "2020-04-26 06:40:54.530690"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBrine Create (1.5ms)[0m  [1m[32mINSERT INTO "brines" ("amount", "units", "salt", "sugar", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["amount", 12], ["units", "cups"], ["salt", 10], ["sugar", 0], ["project_id", 1], ["created_at", "2020-04-26 06:40:54.550685"], ["updated_at", "2020-04-26 06:40:54.550685"]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVessel Create (0.7ms)[0m  [1m[32mINSERT INTO "vessels" ("vessel", "volume", "units", "airlock", "weight", "material", "notes", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["vessel", "Crock"], ["volume", 3], ["units", "Liters"], ["airlock", false], ["weight", true], ["material", "Clay"], ["notes", "Grandma's crock"], ["project_id", 1], ["created_at", "2020-04-26 06:40:54.576288"], ["updated_at", "2020-04-26 06:40:54.576288"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mNote Create (0.8ms)[0m  [1m[32mINSERT INTO "notes" ("text", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["text", "I made this Kimchi to hurt my mouth"], ["project_id", 1], ["created_at", "2020-04-26 06:40:54.587329"], ["updated_at", "2020-04-26 06:40:54.587329"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/projects/" for ::1 at 2020-04-25 23:41:13 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::ProjectsController#index as HTML
+  [1m[36mProject Load (1.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (0.6ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (1.2ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (9.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (1.6ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (242.11ms)
+Completed 200 OK in 384ms (Views: 220.6ms | ActiveRecord: 105.6ms | Allocations: 47164)
+
+
+Started GET "/api/v1/projects/1" for ::1 at 2020-04-25 23:42:58 -0700
+  
+SyntaxError (/Users/Jonny/Development/mod5/Fermentation-App/Mod-5-Final-Project-Fermentation-App/app/controllers/api/v1/projects_controller.rb:10: syntax error, unexpected tCONSTANT, expecting do or '{' or '('
+..., serializerL ProjectSerializer
+...              ^~~~~~~~~~~~~~~~~):
+  
+app/controllers/api/v1/projects_controller.rb:10: syntax error, unexpected tCONSTANT, expecting do or '{' or '('
+app/controllers/api/v1/projects_controller.rb:10: syntax error, unexpected tCONSTANT, expecting do or '{' or '('
+Started GET "/api/v1/projects/1" for ::1 at 2020-04-25 23:43:07 -0700
+Processing by Api::V1::ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/projects_controller.rb:9:in `show'
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mIngredient Load (2.6ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mBrine Load (0.6ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mVessel Load (0.3ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers] Rendered ProjectSerializer with ActiveModelSerializers::Adapter::Attributes (389.87ms)
+Completed 200 OK in 485ms (Views: 353.7ms | ActiveRecord: 50.2ms | Allocations: 41838)
+
+
+Started GET "/projects" for ::1 at 2020-04-26 12:45:02 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/projects"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-04-26 12:45:15 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/Jonny/.rvm/gems/ruby-2.6.6/gems/railties-6.0.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Jonny/.rvm/gems/ruby-2.6.6/gems/railties-6.0.2.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 13.0ms | Allocations: 190)
+Completed 200 OK in 20ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 890)
+
+
+Started GET "/project" for ::1 at 2020-04-26 12:45:20 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/project"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/projects" for ::1 at 2020-04-26 12:45:23 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/projects"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/projects/1" for ::1 at 2020-04-26 12:45:26 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/projects/1"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 12:45:35 -0700
+Processing by Api::V1::ProjectsController#index as HTML
+  [1m[36mProject Load (14.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (0.9ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (1.2ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (1.1ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.79ms)
+Completed 200 OK in 65ms (Views: 44.3ms | ActiveRecord: 20.0ms | Allocations: 7926)
+
+
+Started GET "/api/v1/projects/1" for ::1 at 2020-04-26 12:45:39 -0700
+Processing by Api::V1::ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/projects_controller.rb:9:in `show'
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mIngredient Load (0.5ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mBrine Load (0.4ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mVessel Load (0.8ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers] Rendered ProjectSerializer with ActiveModelSerializers::Adapter::Attributes (14.99ms)
+Completed 200 OK in 18ms (Views: 12.9ms | ActiveRecord: 2.8ms | Allocations: 7365)
+
+
+Started GET "/api/v1/projects/1" for ::1 at 2020-04-26 16:14:42 -0700
+Processing by Api::V1::ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (9.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/projects_controller.rb:9:in `show'
+[active_model_serializers]   [1m[36mUser Load (6.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mIngredient Load (1.4ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mBrine Load (9.6ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mNote Load (6.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mVessel Load (0.9ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers] Rendered ProjectSerializer with ActiveModelSerializers::Adapter::Attributes (310.93ms)
+Completed 200 OK in 425ms (Views: 314.7ms | ActiveRecord: 35.5ms | Allocations: 7490)
+
+
+Started GET "/api/v1/projects/1" for ::1 at 2020-04-26 16:18:32 -0700
+Processing by Api::V1::ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (3.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/projects_controller.rb:9:in `show'
+[active_model_serializers]   [1m[36mUser Load (20.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mIngredient Load (15.9ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mBrine Load (12.9ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mNote Load (1.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mVessel Load (6.1ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers] Rendered ProjectSerializer with ActiveModelSerializers::Adapter::Attributes (330.49ms)
+Completed 200 OK in 340ms (Views: 275.4ms | ActiveRecord: 60.4ms | Allocations: 7360)
+
+
+Started GET "/api/v1/projects/1" for ::1 at 2020-04-26 16:18:45 -0700
+Processing by Api::V1::ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (16.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/projects_controller.rb:9:in `show'
+[active_model_serializers]   [1m[36mUser Load (21.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mIngredient Load (4.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mBrine Load (4.0ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mNote Load (2.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mVessel Load (3.6ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers] Rendered ProjectSerializer with ActiveModelSerializers::Adapter::Attributes (69.62ms)
+Completed 200 OK in 91ms (Views: 34.6ms | ActiveRecord: 52.3ms | Allocations: 7347)
+
+
+Started GET "/api/v1/projects/1" for ::1 at 2020-04-26 16:26:59 -0700
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/projects_controller.rb:9:in `show'
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mIngredient Load (0.9ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mBrine Load (0.5ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers]   [1m[36mVessel Load (0.5ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:10:in `show'
+[active_model_serializers] Rendered ProjectSerializer with ActiveModelSerializers::Adapter::Attributes (147.32ms)
+Completed 200 OK in 214ms (Views: 122.0ms | ActiveRecord: 64.7ms | Allocations: 46843)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 16:27:04 -0700
+Processing by Api::V1::ProjectsController#index as HTML
+[active_model_serializers]   [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (3.22ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.4ms | Allocations: 1488)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 16:27:26 -0700
+Processing by Api::V1::ProjectsController#index as HTML
+[active_model_serializers]   [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (138.08ms)
+Completed 200 OK in 162ms (Views: 106.7ms | ActiveRecord: 33.2ms | Allocations: 7859)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 16:47:09 -0700
+Processing by Api::V1::ProjectsController#index as HTML
+[active_model_serializers]   [1m[36mProject Load (4.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (161.21ms)
+Completed 200 OK in 234ms (Views: 189.9ms | ActiveRecord: 4.0ms | Allocations: 1333)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 16:49:52 -0700
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::ProjectsController#index as HTML
+[active_model_serializers]   [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (28.95ms)
+Completed 200 OK in 75ms (Views: 22.1ms | ActiveRecord: 8.6ms | Allocations: 9255)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 16:51:59 -0700
+Processing by Api::V1::ProjectsController#index as HTML
+[active_model_serializers]   [1m[36mProject Load (66.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (74.26ms)
+Completed 200 OK in 76ms (Views: 9.5ms | ActiveRecord: 66.0ms | Allocations: 1261)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 16:52:19 -0700
+Processing by Api::V1::ProjectsController#index as HTML
+[active_model_serializers]   [1m[36mProject Load (27.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (32.44ms)
+Completed 200 OK in 35ms (Views: 7.5ms | ActiveRecord: 27.2ms | Allocations: 1281)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 16:52:28 -0700
+Processing by Api::V1::ProjectsController#index as HTML
+[active_model_serializers]   [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (3.33ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.5ms | Allocations: 1281)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 16:54:43 -0700
+Processing by Api::V1::ProjectsController#index as */*
+[active_model_serializers]   [1m[36mProject Load (298.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (300.32ms)
+Completed 200 OK in 301ms (Views: 2.5ms | ActiveRecord: 298.4ms | Allocations: 1268)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 16:55:24 -0700
+Processing by Api::V1::ProjectsController#index as */*
+[active_model_serializers]   [1m[36mProject Load (195.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (199.1ms)
+Completed 200 OK in 201ms (Views: 4.2ms | ActiveRecord: 195.9ms | Allocations: 1263)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 16:55:54 -0700
+Processing by Api::V1::ProjectsController#index as */*
+[active_model_serializers]   [1m[36mProject Load (29.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (33.47ms)
+Completed 200 OK in 35ms (Views: 4.6ms | ActiveRecord: 29.8ms | Allocations: 1282)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 16:56:13 -0700
+Processing by Api::V1::ProjectsController#index as */*
+[active_model_serializers]   [1m[36mProject Load (22.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (25.64ms)
+Completed 200 OK in 27ms (Views: 5.1ms | ActiveRecord: 22.2ms | Allocations: 1263)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 16:56:38 -0700
+Processing by Api::V1::ProjectsController#index as */*
+[active_model_serializers]   [1m[36mProject Load (96.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (98.02ms)
+Completed 200 OK in 100ms (Views: 2.6ms | ActiveRecord: 96.0ms | Allocations: 1263)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 16:57:04 -0700
+Processing by Api::V1::ProjectsController#index as */*
+[active_model_serializers]   [1m[36mProject Load (313.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (316.74ms)
+Completed 200 OK in 318ms (Views: 4.4ms | ActiveRecord: 313.5ms | Allocations: 1263)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 17:02:35 -0700
+Processing by Api::V1::ProjectsController#index as */*
+[active_model_serializers]   [1m[36mProject Load (333.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (339.38ms)
+Completed 200 OK in 343ms (Views: 8.4ms | ActiveRecord: 333.3ms | Allocations: 1264)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 17:09:36 -0700
+Processing by Api::V1::ProjectsController#index as */*
+[active_model_serializers]   [1m[36mProject Load (82.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (124.78ms)
+Completed 200 OK in 163ms (Views: 73.8ms | ActiveRecord: 82.6ms | Allocations: 1322)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 17:32:10 -0700
+Processing by Api::V1::ProjectsController#index as */*
+[active_model_serializers]   [1m[36mProject Load (81.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (87.26ms)
+Completed 200 OK in 89ms (Views: 6.2ms | ActiveRecord: 81.9ms | Allocations: 1334)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 17:42:30 -0700
+Processing by Api::V1::ProjectsController#index as */*
+[active_model_serializers]   [1m[36mProject Load (61.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (94.29ms)
+Completed 200 OK in 105ms (Views: 38.3ms | ActiveRecord: 61.8ms | Allocations: 1321)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 17:42:48 -0700
+Processing by Api::V1::ProjectsController#index as */*
+[active_model_serializers]   [1m[36mProject Load (6.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (9.96ms)
+Completed 200 OK in 13ms (Views: 5.9ms | ActiveRecord: 6.4ms | Allocations: 1263)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 17:45:05 -0700
+Processing by Api::V1::ProjectsController#index as */*
+[active_model_serializers]   [1m[36mProject Load (20.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (22.82ms)
+Completed 200 OK in 24ms (Views: 3.2ms | ActiveRecord: 20.2ms | Allocations: 1263)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 17:45:29 -0700
+Processing by Api::V1::ProjectsController#index as */*
+[active_model_serializers]   [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (3.8ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.4ms | Allocations: 1263)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 17:45:39 -0700
+Processing by Api::V1::ProjectsController#index as */*
+[active_model_serializers]   [1m[36mProject Load (13.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (18.4ms)
+Completed 200 OK in 19ms (Views: 5.2ms | ActiveRecord: 13.9ms | Allocations: 1263)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 17:47:31 -0700
+Processing by Api::V1::ProjectsController#index as */*
+[active_model_serializers]   [1m[36mProject Load (107.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (262.11ms)
+Completed 200 OK in 263ms (Views: 155.3ms | ActiveRecord: 107.5ms | Allocations: 1266)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 17:50:03 -0700
+Processing by Api::V1::ProjectsController#index as */*
+[active_model_serializers]   [1m[36mProject Load (17.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (25.68ms)
+Completed 200 OK in 28ms (Views: 10.3ms | ActiveRecord: 17.1ms | Allocations: 1263)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 21:26:43 -0700
+Processing by Api::V1::ProjectsController#index as */*
+[active_model_serializers]   [1m[36mProject Load (1.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (18.76ms)
+Completed 200 OK in 29ms (Views: 20.7ms | ActiveRecord: 1.8ms | Allocations: 1321)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 21:27:26 -0700
+Processing by Api::V1::ProjectsController#index as */*
+[active_model_serializers]   [1m[36mProject Load (61.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (66.02ms)
+Completed 200 OK in 67ms (Views: 4.8ms | ActiveRecord: 61.9ms | Allocations: 1263)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 21:28:08 -0700
+Processing by Api::V1::ProjectsController#index as */*
+[active_model_serializers]   [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (2.57ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.5ms | Allocations: 1263)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 21:29:31 -0700
+Processing by Api::V1::ProjectsController#index as */*
+[active_model_serializers]   [1m[36mProject Load (19.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ProjectSerializer with Hash (24.43ms)
+Completed 200 OK in 26ms (Views: 5.5ms | ActiveRecord: 19.9ms | Allocations: 1263)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 21:29:58 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (31.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (0.6ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (13.7ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (1.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (0.7ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (247.48ms)
+Completed 200 OK in 386ms (Views: 222.1ms | ActiveRecord: 129.9ms | Allocations: 45853)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 21:31:41 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (55.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (37.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (95.8ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (15.7ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (11.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (0.7ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (181.42ms)
+Completed 200 OK in 240ms (Views: 22.7ms | ActiveRecord: 216.8ms | Allocations: 7776)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 21:35:25 -0700
+Processing by Api::V1::ProjectsController#index as HTML
+  [1m[36mProject Load (1.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (5.0ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (0.7ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (2.3ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (40.7ms)
+Completed 200 OK in 61ms (Views: 45.5ms | ActiveRecord: 11.6ms | Allocations: 7774)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 21:35:32 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (12.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (44.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (0.7ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (134.4ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (69.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (3.5ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (278.0ms)
+Completed 200 OK in 296ms (Views: 30.4ms | ActiveRecord: 265.1ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 21:42:23 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (1.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (0.7ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (2.8ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (41.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (67.3ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (205.07ms)
+Completed 200 OK in 211ms (Views: 95.1ms | ActiveRecord: 115.3ms | Allocations: 7909)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 21:42:49 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (168.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (142.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (12.7ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (22.0ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (11.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (1.9ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (211.4ms)
+Completed 200 OK in 383ms (Views: 23.6ms | ActiveRecord: 359.4ms | Allocations: 7778)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 21:43:09 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (18.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (59.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (8.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (42.0ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (2.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (4.4ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (136.13ms)
+Completed 200 OK in 160ms (Views: 24.7ms | ActiveRecord: 135.3ms | Allocations: 7776)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 21:43:58 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (58.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (1.0ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (8.4ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (7.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (2.7ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (139.82ms)
+Completed 200 OK in 201ms (Views: 120.3ms | ActiveRecord: 80.6ms | Allocations: 7778)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 21:45:05 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (10.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (0.7ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (1.3ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (0.9ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (29.67ms)
+Completed 200 OK in 32ms (Views: 18.0ms | ActiveRecord: 14.2ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 21:46:09 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (31.8ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (70.3ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (41.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (15.0ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (182.21ms)
+Completed 200 OK in 187ms (Views: 23.7ms | ActiveRecord: 162.9ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 21:46:40 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (1.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (2.0ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (100.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (15.3ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (137.73ms)
+Completed 200 OK in 142ms (Views: 21.8ms | ActiveRecord: 119.9ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 21:46:51 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (69.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (10.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (58.8ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (20.2ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (36.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (41.9ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (184.4ms)
+Completed 200 OK in 258ms (Views: 19.7ms | ActiveRecord: 237.2ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 21:48:55 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (2.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (13.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (48.0ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (55.0ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (9.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (2.2ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (148.34ms)
+Completed 200 OK in 155ms (Views: 23.0ms | ActiveRecord: 131.2ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 21:58:29 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (3.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (3.0ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (0.9ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (1.7ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (0.7ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (126.79ms)
+Completed 200 OK in 168ms (Views: 147.8ms | ActiveRecord: 11.8ms | Allocations: 7908)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 21:59:12 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (5.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (7.0ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (13.8ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (1.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (0.4ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (45.52ms)
+Completed 200 OK in 54ms (Views: 25.4ms | ActiveRecord: 28.7ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 22:01:45 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (90.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (63.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (23.6ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (0.4ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (0.9ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (128.35ms)
+Completed 200 OK in 254ms (Views: 74.0ms | ActiveRecord: 179.0ms | Allocations: 7780)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 22:01:53 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (26.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (15.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (34.9ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (0.5ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (128.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (30.9ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (229.49ms)
+Completed 200 OK in 258ms (Views: 21.3ms | ActiveRecord: 236.7ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 22:02:56 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (30.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (3.0ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (8.2ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (26.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (1.3ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (55.53ms)
+Completed 200 OK in 92ms (Views: 20.6ms | ActiveRecord: 70.3ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 22:03:12 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (91.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (45.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (1.7ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (0.5ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (0.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (0.7ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (63.49ms)
+Completed 200 OK in 160ms (Views: 17.8ms | ActiveRecord: 141.5ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 22:13:30 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (4.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (0.8ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (1.8ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (1.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (1.6ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (78.23ms)
+Completed 200 OK in 104ms (Views: 84.0ms | ActiveRecord: 13.7ms | Allocations: 7907)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 23:03:55 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (3.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (1.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (16.3ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (2.7ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (49.6ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (238.34ms)
+Completed 200 OK in 270ms (Views: 189.2ms | ActiveRecord: 76.7ms | Allocations: 7907)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 23:04:26 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (79.6ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (117.8ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (1.0ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (236.36ms)
+Completed 200 OK in 243ms (Views: 40.2ms | ActiveRecord: 202.1ms | Allocations: 7779)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 23:04:42 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (8.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (8.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (17.5ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (36.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (105.2ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (188.55ms)
+Completed 200 OK in 201ms (Views: 24.2ms | ActiveRecord: 176.3ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 23:05:16 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (67.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (120.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (11.5ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (9.4ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (10.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (3.3ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (172.71ms)
+Completed 200 OK in 245ms (Views: 22.3ms | ActiveRecord: 222.8ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 23:05:26 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (2.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (2.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (1.0ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (0.6ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.03ms)
+Completed 200 OK in 33ms (Views: 20.9ms | ActiveRecord: 12.1ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 23:05:40 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (1.4ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (3.4ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (128.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (56.4ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (209.19ms)
+Completed 200 OK in 214ms (Views: 22.5ms | ActiveRecord: 190.6ms | Allocations: 7778)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 23:15:24 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (68.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (2.4ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (0.7ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (3.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (7.4ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (93.0ms)
+Completed 200 OK in 165ms (Views: 64.9ms | ActiveRecord: 99.5ms | Allocations: 7907)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 23:17:33 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (99.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (45.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (0.9ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (17.2ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (2.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (8.1ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (137.93ms)
+Completed 200 OK in 256ms (Views: 76.6ms | ActiveRecord: 174.0ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 23:18:54 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (7.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (1.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (11.6ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (10.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (64.5ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (251.96ms)
+Completed 200 OK in 260ms (Views: 164.3ms | ActiveRecord: 95.8ms | Allocations: 7778)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 23:19:04 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (106.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (34.7ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (24.1ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (31.7ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (19.5ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (234.74ms)
+Completed 200 OK in 238ms (Views: 20.8ms | ActiveRecord: 216.8ms | Allocations: 7776)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 23:20:25 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (27.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (20.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (19.0ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (14.3ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (3.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (0.5ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (74.92ms)
+Completed 200 OK in 106ms (Views: 20.2ms | ActiveRecord: 85.2ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 23:21:27 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (8.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (11.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (13.3ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (116.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (59.3ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (230.37ms)
+Completed 200 OK in 234ms (Views: 24.3ms | ActiveRecord: 209.3ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 23:22:31 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (32.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (6.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (6.3ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (15.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (10.2ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (57.3ms)
+Completed 200 OK in 94ms (Views: 20.0ms | ActiveRecord: 73.2ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 23:23:31 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (3.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (126.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (24.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (9.7ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (6.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (6.8ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (186.94ms)
+Completed 200 OK in 194ms (Views: 16.7ms | ActiveRecord: 176.8ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 23:23:46 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (0.5ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (0.5ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (0.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (2.8ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (17.86ms)
+Completed 200 OK in 23ms (Views: 17.1ms | ActiveRecord: 5.2ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 23:24:00 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (3.6ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (0.4ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (9.7ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (0.2ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (37.15ms)
+Completed 200 OK in 40ms (Views: 25.4ms | ActiveRecord: 14.6ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 23:24:52 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (10.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (147.6ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (6.4ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (6.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (11.4ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (279.73ms)
+Completed 200 OK in 295ms (Views: 109.7ms | ActiveRecord: 184.5ms | Allocations: 7779)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 23:25:31 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (44.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (16.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (1.9ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (8.8ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (0.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (0.2ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (45.78ms)
+Completed 200 OK in 94ms (Views: 20.6ms | ActiveRecord: 72.7ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 23:25:39 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (121.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (0.9ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (0.5ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (0.5ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (21.67ms)
+Completed 200 OK in 146ms (Views: 17.7ms | ActiveRecord: 127.8ms | Allocations: 7776)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 23:25:55 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (6.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (20.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (11.6ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (4.6ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (0.4ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (57.14ms)
+Completed 200 OK in 66ms (Views: 22.2ms | ActiveRecord: 43.6ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 23:26:15 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (10.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (25.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (20.4ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (12.0ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (14.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (7.1ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (93.13ms)
+Completed 200 OK in 106ms (Views: 15.6ms | ActiveRecord: 90.4ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 23:26:44 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (9.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (3.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (17.4ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (18.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (0.8ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (60.6ms)
+Completed 200 OK in 72ms (Views: 23.2ms | ActiveRecord: 48.7ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 23:27:54 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (8.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (0.4ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (0.3ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (8.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (0.5ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (37.06ms)
+Completed 200 OK in 45ms (Views: 26.0ms | ActiveRecord: 18.5ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 23:28:55 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (3.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (0.7ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (0.8ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (11.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (0.4ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (73.32ms)
+Completed 200 OK in 79ms (Views: 62.5ms | ActiveRecord: 16.3ms | Allocations: 7778)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 23:28:59 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (1.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (15.6ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (0.3ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (10.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (1.8ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (42.42ms)
+Completed 200 OK in 47ms (Views: 17.2ms | ActiveRecord: 29.8ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-26 23:29:14 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (5.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (0.5ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (0.4ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (0.4ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (58.02ms)
+Completed 200 OK in 66ms (Views: 57.3ms | ActiveRecord: 8.6ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-27 00:10:44 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (29.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (43.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (0.8ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (24.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (3.3ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (130.1ms)
+Completed 200 OK in 174ms (Views: 65.1ms | ActiveRecord: 106.2ms | Allocations: 7907)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-27 00:12:16 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (35.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (6.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (10.4ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (31.1ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (12.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (92.5ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (181.7ms)
+Completed 200 OK in 223ms (Views: 34.3ms | ActiveRecord: 188.4ms | Allocations: 7776)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-27 00:12:21 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (9.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (6.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (2.9ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (4.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (6.4ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (42.54ms)
+Completed 200 OK in 55ms (Views: 21.5ms | ActiveRecord: 33.0ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-27 00:12:40 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (6.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (19.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (19.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (14.7ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (0.7ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (19.7ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (103.46ms)
+Completed 200 OK in 116ms (Views: 35.5ms | ActiveRecord: 80.3ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-27 00:12:51 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (55.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (13.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (13.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (1.9ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (12.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (2.0ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (154.67ms)
+Completed 200 OK in 213ms (Views: 114.2ms | ActiveRecord: 98.3ms | Allocations: 7781)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-27 00:13:05 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (10.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (9.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (2.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (8.5ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (2.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (4.9ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (54.18ms)
+Completed 200 OK in 69ms (Views: 30.0ms | ActiveRecord: 38.4ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-27 00:13:13 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (27.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (13.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (12.9ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (5.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (55.9ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (111.98ms)
+Completed 200 OK in 144ms (Views: 27.1ms | ActiveRecord: 116.0ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-27 00:13:29 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (8.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (7.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (0.7ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (4.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (1.2ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (30.81ms)
+Completed 200 OK in 44ms (Views: 20.6ms | ActiveRecord: 22.7ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-27 00:13:32 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (12.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (0.7ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (0.9ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (0.7ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (2.7ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (21.87ms)
+Completed 200 OK in 37ms (Views: 19.3ms | ActiveRecord: 17.7ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-27 00:13:45 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (11.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (155.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (10.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (26.7ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (2.2ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (214.71ms)
+Completed 200 OK in 230ms (Views: 21.8ms | ActiveRecord: 207.5ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-27 00:13:55 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (8.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (60.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (0.4ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (7.1ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (59.7ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (0.9ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (153.9ms)
+Completed 200 OK in 167ms (Views: 27.4ms | ActiveRecord: 137.8ms | Allocations: 7775)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-27 00:14:01 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (29.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (13.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (0.8ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (0.3ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (0.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (2.9ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (53.34ms)
+Completed 200 OK in 86ms (Views: 38.6ms | ActiveRecord: 47.5ms | Allocations: 7778)
+
+
+Started GET "/api/v1/projects/" for ::1 at 2020-04-27 00:14:56 -0700
+Processing by Api::V1::ProjectsController#index as */*
+  [1m[36mProject Load (2.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mIngredient Load (0.5ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mBrine Load (208.6ms)[0m  [1m[34mSELECT "brines".* FROM "brines" WHERE "brines"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mNote Load (141.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mVessel Load (21.0ms)[0m  [1m[34mSELECT "vessels".* FROM "vessels" WHERE "vessels"."project_id" = $1[0m  [["project_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/projects_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (393.41ms)
+Completed 200 OK in 400ms (Views: 24.9ms | ActiveRecord: 374.3ms | Allocations: 7778)
+
+
