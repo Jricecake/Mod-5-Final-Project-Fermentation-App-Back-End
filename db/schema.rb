@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 2020_04_23_004715) do
 
   create_table "notes", force: :cascade do |t|
     t.string "text"
+    t.integer "day_id"
     t.bigint "project_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
