@@ -1,5 +1,5 @@
 class Api::V1::UsersController < ApplicationController
-  before_action :set_user, only: [:show, :update, :destroy]
+  skip_before_action :authorized, only: [:create]
 
   # GET /users
   def index
@@ -15,6 +15,7 @@ class Api::V1::UsersController < ApplicationController
 
   # POST /users
   def create 
+    # byebug
     user = User.create(user_params)
     if user.valid?
       @token = issue_token(user)
@@ -45,6 +46,6 @@ end
 
     # Only allow a trusted parameter "white list" through.
     def user_params
-      params.require(:user).permit(:username, :first_name, :last_name, :email, :password_digest)
+      params.require(:user).permit(:username, :first_name, :last_name, :email, :password )
     end
 end
