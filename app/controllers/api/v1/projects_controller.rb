@@ -16,7 +16,7 @@ class Api::V1::ProjectsController < ApplicationController
       end_date: params[:project][:end_date],
       user_id: params[:project][:user_id]
     }
-    byebug
+    # byebug
     project = Project.create(state_params)
     createIngredients(params[:ingredients], project.id)
     createVessels(params[:vessels], project.id)
