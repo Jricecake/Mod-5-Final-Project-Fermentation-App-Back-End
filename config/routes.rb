@@ -9,6 +9,7 @@ Rails.application.routes.draw do
       resources :users
       post '/login', to: 'auth#create'
       get '/current_user', to: 'auth#show'
+      get '/user_projects/:id', to: 'projects#user_projects'
     end
   end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

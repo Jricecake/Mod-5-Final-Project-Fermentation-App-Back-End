@@ -10,6 +10,11 @@ class Api::V1::ProjectsController < ApplicationController
     render json: @project, serializer: ProjectSerializer
   end
 
+  def user_projects
+    @projects = Project.find_by(user_id: params[:id])
+    render json: @projects, serializer: ProjectSerializer
+  end
+
   def create
     state_params = {
       name: params[:project][:name],
