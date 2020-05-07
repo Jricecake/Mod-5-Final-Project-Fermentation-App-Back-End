@@ -11,8 +11,8 @@ class Api::V1::ProjectsController < ApplicationController
   end
 
   def user_projects
-    @projects = Project.find_by(user_id: params[:id])
-    render json: @projects, serializer: ProjectSerializer
+    @projects = Project.where(user_id: params[:id])
+    render json: @projects, each_serializer: ProjectSerializer
   end
 
   def create
