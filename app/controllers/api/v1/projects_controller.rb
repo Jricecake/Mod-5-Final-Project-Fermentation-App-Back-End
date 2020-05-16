@@ -28,6 +28,16 @@ class Api::V1::ProjectsController < ApplicationController
     render json: {project: ProjectSerializer.new(project)}
   end
 
+  def update
+    project = Project.find(params[:id])
+    project.update(project_params)
+    if project.valid? 
+      render json: { project: ProjectSerializer.new(project) }
+    else
+      render json: { error: 'failed to update project' }, status: :not_acceptable
+    end
+  end
+
   def createIngredients(array,id)
     array.each do |ingredient|
       newIngredient = Ingredient.create({project_id: id, name: ingredient[:name], quantity: ingredient[:quantity], units: ingredient[:units], prep: ingredient[:prep]})
