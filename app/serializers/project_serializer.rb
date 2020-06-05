@@ -1,3 +1,3 @@
 class ProjectSerializer < ActiveModel::Serializer
-  attributes :name, :end_date, :created_at, :ingredients, :brines, :notes, :user, :vessels, :id
+  attributes :name, :completed, :end_date, :created_at, :ingredients, :brines, :notes, :user, :vessels, :id, :completion_date
 end

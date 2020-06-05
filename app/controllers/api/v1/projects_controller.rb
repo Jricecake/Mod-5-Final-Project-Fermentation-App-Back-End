@@ -30,6 +30,7 @@ class Api::V1::ProjectsController < ApplicationController
 
   def update
     project = Project.find(params[:id])
+    # byebug
     project.update(project_params)
     if project.valid? 
       render json: { project: ProjectSerializer.new(project) }
@@ -59,7 +60,7 @@ class Api::V1::ProjectsController < ApplicationController
   private
 
   def project_params
-    params.require(:project).permit(:name, :end_date, :user_id)
+    params.require(:project).permit(:name, :end_date, :user_id, :id, :completed, :completion_date, :ingredients, :ingredients_attributes => [:id, :name, :prep, :quantity, :units])
   end
 
 

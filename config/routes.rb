@@ -11,6 +11,7 @@ Rails.application.routes.draw do
       get '/current_user', to: 'auth#show'
       get '/user_projects/:id', to: 'projects#user_projects'
       patch '/projects/:id/edit', to: 'projects#update'
+      delete '/projects/:id/', to: 'projects#destroy'
     end
   end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
