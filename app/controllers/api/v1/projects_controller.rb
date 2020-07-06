@@ -60,7 +60,7 @@ class Api::V1::ProjectsController < ApplicationController
   private
 
   def project_params
-    params.require(:project).permit(:name, :end_date, :user_id, :id, :completed, :completion_date, :ingredients, :ingredients_attributes => [:id, :name, :prep, :quantity, :units])
+    params.require(:project).permit(:name, :end_date, :user_id, :id, :completed, :completion_date, :ingredients, :vessels, :ingredients_attributes => [:id, :name, :prep, :quantity, :units], :vessels_attributes => [:id, :vessel, :volume, :material, :units])
   end
 
 
