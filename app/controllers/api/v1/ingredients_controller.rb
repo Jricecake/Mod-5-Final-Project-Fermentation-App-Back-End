@@ -2,12 +2,12 @@ class Api::V1::IngredientsController < ApplicationController
 
   def index
     @ingredients = Ingredient.all
-    render json {ingredients: @ingredients}
+    render json: {ingredients: @ingredients}
   end
 
   def create
-    @ingredient = Ingredient.create(ingredient_params)
-    render json: @ingredient
+    ingredient = Ingredient.create(ingredient_params)
+    render json: ingredient
   end
 
   private
