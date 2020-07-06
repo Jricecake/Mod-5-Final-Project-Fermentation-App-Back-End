@@ -6,8 +6,8 @@ class Api::V1::IngredientsController < ApplicationController
   end
 
   def create
-    ingredient = Ingredient.create(ingredient_params)
-    render json: ingredient
+    @ingredient = Ingredient.create(ingredient_params)
+    render json: @ingredient
   end
 
   private
